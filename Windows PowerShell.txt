@@ -1,0 +1,215 @@
+Windows PowerShell
+版权所有（C） Microsoft Corporation。保留所有权利。
+
+安装最新的 PowerShell，了解新功能和改进！https://aka.ms/PSWindows
+
+PS C:\Users\86187> dir
+
+
+    目录: C:\Users\86187
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2024/3/26     19:35                .AivmVbox
+d-----          2023/2/1     17:07                .android
+d-----         2025/1/15     22:11                .config
+d-----         2024/8/28     17:32                .ipython
+d-----         2023/5/27     14:05                .LemuHyperv
+d-----         2023/3/18     23:13                .local
+d-----          2024/7/6     22:16                .matplotlib
+d-----         2024/6/24     15:23                .vscode
+d-r---         2023/1/26     15:28                Contacts
+d-r---          2025/3/7     23:38                Desktop
+d-r---         2025/1/22     16:45                Documents
+dar---          2025/3/9     14:11                Downloads
+d-r---         2023/1/26     15:28                Favorites
+d-r---         2023/1/26     15:28                Links
+d-r---          2023/2/1     17:06                Music
+d-r---         2023/1/26     15:30                OneDrive
+d-r---         2024/4/10     15:35                Pictures
+d-r---         2023/1/26     15:28                Saved Games
+d-r---         2023/1/26     15:45                Searches
+d-----         2023/1/27      9:08                source
+d-r---          2025/3/9     16:09                Videos
+-a----         2024/6/24     22:42             77 import numpy as np.py
+-a----         2023/3/18     21:37      401615800 W.P.S.11751.20.2871.exe
+
+
+PS C:\Users\86187> dir -file
+
+
+    目录: C:\Users\86187
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         2024/6/24     22:42             77 import numpy as np.py
+-a----         2023/3/18     21:37      401615800 W.P.S.11751.20.2871.exe
+
+
+PS C:\Users\86187> dir -directory
+
+
+    目录: C:\Users\86187
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2024/3/26     19:35                .AivmVbox
+d-----          2023/2/1     17:07                .android
+d-----         2025/1/15     22:11                .config
+d-----         2024/8/28     17:32                .ipython
+d-----         2023/5/27     14:05                .LemuHyperv
+d-----         2023/3/18     23:13                .local
+d-----          2024/7/6     22:16                .matplotlib
+d-----         2024/6/24     15:23                .vscode
+d-r---         2023/1/26     15:28                Contacts
+d-r---          2025/3/7     23:38                Desktop
+d-r---         2025/1/22     16:45                Documents
+dar---          2025/3/9     14:11                Downloads
+d-r---         2023/1/26     15:28                Favorites
+d-r---         2023/1/26     15:28                Links
+d-r---          2023/2/1     17:06                Music
+d-r---         2023/1/26     15:30                OneDrive
+d-r---         2024/4/10     15:35                Pictures
+d-r---         2023/1/26     15:28                Saved Games
+d-r---         2023/1/26     15:45                Searches
+d-----         2023/1/27      9:08                source
+d-r---          2025/3/9     16:09                Videos
+
+
+PS C:\Users\86187> cd c:\
+PS C:\> dir
+
+
+    目录: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2024/3/26     19:43                Matlab 2020a 64位安装包
+d-r---          2025/3/7     22:42                Program Files
+d-r---        2024/11/14     20:50                Program Files (x86)
+d-r---          2025/3/3     23:17                Users
+da----          2025/3/3     20:20                Windows
+d-----         2024/1/11     16:12                XboxGames
+-a----         2025/1/24      8:49          12288 DumpStack.log
+-a----        2023/12/31     21:31              0 opinstall.log
+
+
+PS C:\> dir -direcorty
+Get-ChildItem : 找不到与参数名称“direcorty”匹配的参数。
+所在位置 行:1 字符: 5
++ dir -direcorty
++     ~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem]，ParameterBindingExce
+    ption
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetC
+   hildItemCommand
+
+PS C:\> dir -directory
+
+
+    目录: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2024/3/26     19:43                Matlab 2020a 64位安装包
+d-r---          2025/3/7     22:42                Program Files
+d-r---        2024/11/14     20:50                Program Files (x86)
+d-r---          2025/3/3     23:17                Users
+da----          2025/3/3     20:20                Windows
+d-----         2024/1/11     16:12                XboxGames
+
+
+PS C:\> dir -file
+
+
+    目录: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         2025/1/24      8:49          12288 DumpStack.log
+-a----        2023/12/31     21:31              0 opinstall.log
+
+
+PS C:\> cd 用户
+cd : 找不到路径“C:\用户”，因为该路径不存在。
+所在位置 行:1 字符: 1
++ cd 用户
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\用户:String) [Set-Location], ItemNotFo
+u    ndException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCom
+   mand
+
+PS C:\> cd 用户\
+cd : 找不到路径“C:\用户\”，因为该路径不存在。
+所在位置 行:1 字符: 1
++ cd 用户\
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\用户\:String) [Set-Location], ItemNotF
+o    undException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCom
+   mand
+
+PS C:\> cd c:\users
+PS C:\users> cd ..\windows
+PS C:\windows> cd..\
+cd..\ : 无法将“cd..\”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径
+，请确保路径正确，然后再试一次。
+所在位置 行:1 字符: 1
++ cd..\
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (cd..\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\windows> cd ..\
+PS C:\> cd c:\users
+PS C:\users>  cd ..\windows
+PS C:\windows> cd ..\
+PS C:\> New-Item -Path "C:\数学分析答案" -itemtype directory
+
+
+    目录: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          2025/3/9     20:24                数学分析答案
+
+
+PS C:\> dir
+
+
+    目录: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         2024/3/26     19:43                Matlab 2020a 64位安装包
+d-r---          2025/3/7     22:42                Program Files
+d-r---        2024/11/14     20:50                Program Files (x86)
+d-r---          2025/3/3     23:17                Users
+da----          2025/3/3     20:20                Windows
+d-----         2024/1/11     16:12                XboxGames
+d-----          2025/3/9     20:24                数学分析答案
+-a----         2025/1/24      8:49          12288 DumpStack.log
+-a----        2023/12/31     21:31              0 opinstall.log
+
+
+PS C:\>  New-Item -Path "C:\数学分析答案\答案解析一.txt" -itemtype file -value "***"
+
+
+    目录: C:\数学分析答案
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          2025/3/9     20:29              3 答案解析一.txt
+
+
+PS C:\>
